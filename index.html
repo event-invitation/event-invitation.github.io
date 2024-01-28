@@ -4,15 +4,19 @@
     <title>Dahlia - Responsive Wedding Invitation</title>
     <link rel="preload" href="css/style.min.css" as="style" />
     <link rel="preload" href="js/script.min.js" as="script" />
-    <script type="text/javascript" src="venobox/venobox.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
 
     <link
-      rel="stylesheet"
-      href="venobox/venobox.min.css"
-      type="text/css"
-      media="screen"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.css"
+    type="text/css"
+    media="screen"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -532,8 +536,6 @@
             class="carousel mb-4 flickity-enabled is-draggable"
             tabindex="0"
           >
-            <div class="flickity-viewport" style="height: 737.859px">
-              <div class="flickity-slider" style="transform: translateX(0%)">
                 <div
                   class="carousel-cell align-items-center g-0 justify-content-center justify-content-lg-between row flickity-cell is-selected"
                   style="transform: translateX(0%)"
@@ -714,19 +716,11 @@
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
           </div>
 
           <ul
             class="carousel-page font-alt fs-5 fw-bold list-inline text-center"
           >
-            <li class="list-inline-item mx-2 page-dots is-selected"></li>
-            <li class="list-inline-item mx-2 page-dots"></li>
-            <li class="list-inline-item mx-2 page-dots"></li>
-            <li class="list-inline-item mx-2 page-dots"></li>
-            <li class="list-inline-item mx-2 page-dots"></li>
-          </ul>
         </div>
       </div>
     </section>
@@ -788,18 +782,16 @@
             <div class="gallery-wrapper">
               <div
                 class="gallery-grid"
-                style="position: relative; height: 4057.31px"
               >
                 <div
                   class="item"
-                  style="position: absolute; left: 0px; top: 0px"
                 >
                   <figure>
                     <div class="gallery-img">
                       <a
                         href="images/gallery-1.jpg"
                         data-gall="photos"
-                        class="vbox-item"
+                        class="venobox"
                       >
                         <img src="images/gallery-1.jpg" alt="" />
                       </a>
@@ -809,14 +801,13 @@
 
                 <div
                   class="item"
-                  style="position: absolute; left: 0px; top: 604.328px"
                 >
                   <figure>
                     <div class="gallery-img">
                       <a
                         href="images/gallery-2.jpg"
                         data-gall="photos"
-                        class="vbox-item"
+                        class="venobox"
                       >
                         <img src="images/gallery-2.jpg" alt="" />
                       </a>
@@ -826,14 +817,13 @@
 
                 <div
                   class="item"
-                  style="position: absolute; left: 0px; top: 1014.33px"
                 >
                   <figure>
                     <div class="gallery-img">
                       <a
                         href="images/gallery-3.jpg"
                         data-gall="photos"
-                        class="vbox-item"
+                        class="venobox"
                       >
                         <img src="images/gallery-3.jpg" alt="" />
                       </a>
@@ -843,14 +833,13 @@
 
                 <div
                   class="item"
-                  style="position: absolute; left: 0px; top: 1618.66px"
                 >
                   <figure>
                     <div class="gallery-img">
                       <a
                         href="images/gallery-4.jpg"
                         data-gall="photos"
-                        class="vbox-item"
+                        class="venobox"
                       >
                         <img src="images/gallery-4.jpg" alt="" />
                       </a>
@@ -860,14 +849,13 @@
 
                 <div
                   class="item"
-                  style="position: absolute; left: 0px; top: 2028.66px"
                 >
                   <figure>
                     <div class="gallery-img">
                       <a
                         href="images/gallery-5.jpg"
                         data-gall="photos"
-                        class="vbox-item"
+                        class="venobox"
                       >
                         <img src="images/gallery-5.jpg" alt="" />
                       </a>
@@ -877,14 +865,13 @@
 
                 <div
                   class="item"
-                  style="position: absolute; left: 0px; top: 2632.98px"
                 >
                   <figure>
                     <div class="gallery-img">
                       <a
                         href="images/gallery-6.jpg"
                         data-gall="photos"
-                        class="vbox-item"
+                        class="venobox"
                       >
                         <img src="images/gallery-6.jpg" alt="" />
                       </a>
@@ -894,14 +881,13 @@
 
                 <div
                   class="item"
-                  style="position: absolute; left: 0px; top: 3237.31px"
                 >
                   <figure>
                     <div class="gallery-img">
                       <a
                         href="images/gallery-7.jpg"
                         data-gall="photos"
-                        class="vbox-item"
+                        class="venobox"
                       >
                         <img src="images/gallery-7.jpg" alt="" />
                       </a>
@@ -911,14 +897,13 @@
 
                 <div
                   class="item"
-                  style="position: absolute; left: 0px; top: 3647.31px"
                 >
                   <figure>
                     <div class="gallery-img">
                       <a
                         href="images/gallery-8.jpg"
                         data-gall="photos"
-                        class="vbox-item"
+                        class="venobox"
                       >
                         <img src="images/gallery-8.jpg" alt="" />
                       </a>
@@ -1129,4 +1114,7 @@
 
     <script src="js/script.min.js"></script>
   </body>
+
+  <script>
+  </script>
 </html>
