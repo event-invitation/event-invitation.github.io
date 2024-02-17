@@ -78,4 +78,26 @@ $(document).ready(function () {
       document.body.style.overflow = "hidden";
     }
   }
+
+  if ($(window).width() <= 768) {
+    $(".gallery-grid").addClass("carousel-mobile").removeClass("gallery-grid");
+
+    $(".gallery-img")
+      .children("a")
+      .each(function () {
+        $(this).removeClass("venobox");
+        $(this).removeClass("vbox-item");
+      });
+    // Carousel init
+    $(".carousel-mobile").flickity({
+      cellSelector: ".item",
+      cellAlign: "left",
+      contain: true,
+      wrapAround: true,
+      adaptiveHeight: true,
+      //draggable: false,
+      imagesLoaded: true,
+      pauseAutoPlayOnHover: false,
+    });
+  }
 });
