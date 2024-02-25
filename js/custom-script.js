@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("wheel", handleWheel, { passive: false });
   document.addEventListener("keydown", handleKeyPress);
 
+  $("#scroll-for-info").on("click", () => {
+    document
+      .getElementById("the-couple")
+      .scrollIntoView({ behavior: "smooth" });
+    handleNavbarVisibility(targetSection);
+  });
+
   function handleWheel(event) {
     const isScrollingDown = event.deltaY > 0;
     const currentSection = getCurrentSection();
@@ -62,7 +69,7 @@ $(document).ready(function () {
       $(this.element).addClass("fade-in-visible");
     },
     {
-      offset: "50%",
+      offset: "85%",
     }
   );
   $(".the-couple").waypoint((direction) => showNavbar(direction == "down"));
